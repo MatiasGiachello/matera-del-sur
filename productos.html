@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de mates, bombillas, termos y yerbas.">
+    <meta name="author" content="Matías Giachello">
+    <title>Productos | Matera del Sur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body id="top">
+
+    <!-- ===== ENCABEZADO Y MENÚ ===== -->
+    <header class="encabezado">
+        <div class="contenedor encabezado-interno">
+            <a href="index.html" class="logo">Matera <span>del Sur</span></a>
+
+            <!-- Menú para celular hecho solo con CSS (checkbox + label) -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icono" aria-label="Abrir menú">&#9776;</label>
+
+            <nav class="menu">
+                <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html" class="activo">Productos</a></li>
+                <li><a href="envios.html">Envíos y pagos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="titulo-pagina">
+            <div class="contenedor">
+                <h1>Nuestros productos</h1>
+                <p>Elegí una categoría para ir directo a ella.</p>
+                <!-- Enlaces internos (anclas) dentro de la misma página -->
+                <nav class="filtros">
+                    <a href="#mates">Mates</a>
+                    <a href="#bombillas">Bombillas</a>
+                    <a href="#termos">Termos</a>
+                    <a href="#yerbas">Yerbas</a>
+                </nav>
+                <!-- Enlace con atributo download -->
+                <a href="docs/catalogo-matera-del-sur.pdf" download class="boton boton-claro">&#11015; Descargar catálogo en PDF</a>
+            </div>
+        </section>
+
+        <div class="contenedor">
+
+        <section id="mates" class="categoria">
+            <h2>Mates</h2>
+            <div class="grilla">
+                <article class="producto">
+                    <span class="etiqueta">Más vendido</span>
+                    <img src="https://images.unsplash.com/photo-1784475844948-e9abada34215?w=600&q=70&auto=format&fit=crop" alt="Mate Imperial de calabaza" loading="lazy">
+                    <div class="producto-info">
+                        <h3>Mate Imperial de calabaza</h3>
+                        <p>Calabaza seleccionada forrada en cuero, con virola de alpaca cincelada.</p>
+                        <p class="precio">$28.000</p>
+                        <a href="contacto.html" class="boton">Consultar</a>
+                    </div>
+                </article>
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1609541994821-d909982e2f1b?w=600&q=70&auto=format&fit=crop" alt="Mate Torpedo de algarrobo" loading="lazy">
+                    <div class="producto-info">
+                        <h3>Mate Torpedo de algarrobo</h3>
+                        <p>Tallado en madera de algarrobo, ideal para el uso diario.</p>
+                        <p class="precio">$15.500</p>
+                        <a href="contacto.html" class="boton">Consultar</a>
+                    </div>
+                </article>
+                <article class="producto">
+                    <span class="etiqueta">Nuevo</span>
+                    <img src="https://images.unsplash.com/photo-1675001077121-792d71f58d62?w=600&q=70&auto=format&fit=crop" alt="Mate de cerámica esmaltada" loading="lazy">
+                    <div class="producto-info">
+                        <h3>Mate de cerámica esmaltada</h3>
+                        <p>Hecho a mano, no absorbe sabores y es fácil de limpiar.</p>
+                        <p class="precio">$12.000</p>
+                        <a href="contacto.html" class="boton">Consultar</a>
+                    </div>
+                </article>
+            </div>
+            <a href="#top" class="volver">&uarr; Volver arriba</a>
+        </section>
+
+        <section id="bombillas" class="categoria">
+            <h2>Bombillas</h2>
+            <div class="grilla">
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1784475845427-81d1967770b9?w=600&q=70&auto=format&fit=crop" alt="Bombilla pico de loro" loading="lazy">
+                    <div class="producto-info">
+                        <h3>Bombilla pico de loro</h3>
+                        <p>Alpaca con detalle de bronce y filtro tipo cuchara.</p>
+                        <p class="precio">$9.800</p>
+                        <a href="contacto.html" class="boton">Consultar</a>
+                    </div>
+                </article>
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1694973798648-b1b1b79aa9f3?w=600&q=70&auto=format&fit=crop" alt="Bombilla de acero inoxidable" loading="lazy">
+                    <div class="producto-info">
+                        <h3>Bombilla de acero inoxidable</h3>
+                        <p>Resistente y desarmable para una limpieza completa.</p>
+                        <p class="precio">$6.500</p>
+                        <a href="contacto.html" class="boton">Consultar</a>
+                    </div>
+                </article>
+                <article class="producto">
+                    <span class="etiqueta">Oferta</span>
+                    <img src="https://images.unsplash.com/photo-1784475844777-dc04755b82a3?w=600&q=70&auto=format&fit=crop" alt="Bombilla de caña bambú" loading="lazy">
+                    <div class="producto-info">
+                        <h3>Bombilla de caña bambú</h3>
+                        <p>Natural y liviana, con filtro de resorte.</p>
+                        <p class="precio">$3.900</p>
+                        <a href="contacto.html" class="boton">Consultar</a>
+                    </div>
+                </article>
+            </div>
+            <a href="#top" class="volver">&uarr; Volver arriba</a>
+        </section>
+
+        <section id="termos" class="categoria">
+            <h2>Termos</h2>
+            <div class="grilla">
+                <article class="producto">
+                    <span class="etiqueta">Más vendido</span>
+                    <img src="https://images.unsplash.com/photo-1613645540553-d98859ffeec5?w=600&q=70&auto=format&fit=crop" alt="Termo de acero 1 litro" loading="lazy">
+                    <div class="producto-info">
+                        <h3>Termo de acero 1 litro</h3>
+                        <p>Mantiene el agua caliente 24 horas. Pico cebador incluido.</p>
+                        <p class="precio">$45.000</p>
+                        <a href="contacto.html" class="boton">Consultar</a>
+                    </div>
+                </article>
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1610399809302-f1dd7ec33187?w=600&q=70&auto=format&fit=crop" alt="Termo de acero 750 ml" loading="lazy">
+                    <div class="producto-info">
+                        <h3>Termo de acero 750 ml</h3>
+                        <p>Tamaño intermedio con manija plegable.</p>
+                        <p class="precio">$38.000</p>
+                        <a href="contacto.html" class="boton">Consultar</a>
+                    </div>
+                </article>
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1521752191297-b38bf3be4901?w=600&q=70&auto=format&fit=crop" alt="Termo de acero 500 ml" loading="lazy">
+                    <div class="producto-info">
+                        <h3>Termo de acero 500 ml</h3>
+                        <p>Compacto, ideal para llevar en la mochila.</p>
+                        <p class="precio">$32.000</p>
+                        <a href="contacto.html" class="boton">Consultar</a>
+                    </div>
+                </article>
+            </div>
+            <a href="#top" class="volver">&uarr; Volver arriba</a>
+        </section>
+
+        <section id="yerbas" class="categoria">
+            <h2>Yerbas</h2>
+            <div class="grilla">
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1559749619-5f290507d5e6?w=600&q=70&auto=format&fit=crop" alt="Yerba orgánica 1 kg" loading="lazy">
+                    <div class="producto-info">
+                        <h3>Yerba orgánica 1 kg</h3>
+                        <p>Cultivada sin agroquímicos, sabor suave y parejo.</p>
+                        <p class="precio">$6.200</p>
+                        <a href="contacto.html" class="boton">Consultar</a>
+                    </div>
+                </article>
+                <article class="producto">
+                    <span class="etiqueta">Oferta</span>
+                    <img src="https://images.unsplash.com/photo-1784475845364-f9cbad75ffd8?w=600&q=70&auto=format&fit=crop" alt="Yerba barbacuá 500 g" loading="lazy">
+                    <div class="producto-info">
+                        <h3>Yerba barbacuá 500 g</h3>
+                        <p>Secado tradicional a leña, sabor ahumado intenso.</p>
+                        <p class="precio">$4.300</p>
+                        <a href="contacto.html" class="boton">Consultar</a>
+                    </div>
+                </article>
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1675001077188-809370ce3279?w=600&q=70&auto=format&fit=crop" alt="Yerba compuesta 500 g" loading="lazy">
+                    <div class="producto-info">
+                        <h3>Yerba compuesta 500 g</h3>
+                        <p>Con peperina, menta y burrito.</p>
+                        <p class="precio">$3.800</p>
+                        <a href="contacto.html" class="boton">Consultar</a>
+                    </div>
+                </article>
+            </div>
+            <a href="#top" class="volver">&uarr; Volver arriba</a>
+        </section>
+
+        </div>
+
+    </main>
+
+    <!-- ===== PIE DE PÁGINA ===== -->
+    <footer class="pie">
+        <div class="contenedor pie-interno">
+            <div>
+                <p class="logo">Matera <span>del Sur</span></p>
+                <p>Todo para el mate, con envíos a todo el país.</p>
+            </div>
+            <div>
+                <h4>Secciones</h4>
+                <ul>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="envios.html">Envíos y pagos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Seguinos</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="creditos">Fotos: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a> (Matias Luge, Lucia Durdos, Jeffrey Brandjes, Arūnas Naujokas, Bluewater Sweden, Egor Komarov, Arseniy Kapran, Lautaro Andreani, Camila Seves Espasandin, Federico Garcia, masha.uu).</p>
+        <p class="copy">&copy; 2026 Matera del Sur &middot; Tienda ficticia creada por Matías Giachello para Desarrollo de Software III</p>
+    </footer>
+
+</body>
+</html>

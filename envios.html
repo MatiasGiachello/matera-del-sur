@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Costos de envío y medios de pago.">
+    <meta name="author" content="Matías Giachello">
+    <title>Envíos y pagos | Matera del Sur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body id="top">
+
+    <!-- ===== ENCABEZADO Y MENÚ ===== -->
+    <header class="encabezado">
+        <div class="contenedor encabezado-interno">
+            <a href="index.html" class="logo">Matera <span>del Sur</span></a>
+
+            <!-- Menú para celular hecho solo con CSS (checkbox + label) -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icono" aria-label="Abrir menú">&#9776;</label>
+
+            <nav class="menu">
+                <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="envios.html" class="activo">Envíos y pagos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="titulo-pagina">
+            <div class="contenedor">
+                <h1>Envíos y medios de pago</h1>
+                <p>Toda la información para recibir tu compra.</p>
+            </div>
+        </section>
+
+        <div class="contenedor seccion">
+
+            <h2>Costos de envío</h2>
+            <div class="tabla-scroll">
+                <table>
+                    <caption>Costos y plazos de envío según la zona</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Zona</th>
+                            <th scope="col">Tipo de envío</th>
+                            <th scope="col">Demora</th>
+                            <th scope="col">Costo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" rowspan="2">CABA y GBA</th>
+                            <td>Moto (mismo día)</td>
+                            <td>24 hs</td>
+                            <td>$4.500</td>
+                        </tr>
+                        <tr>
+                            <td>Correo a domicilio</td>
+                            <td>2 a 3 días</td>
+                            <td>$5.200</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Interior del país</th>
+                            <td>Correo a domicilio</td>
+                            <td>4 a 7 días</td>
+                            <td>$7.800</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Retiro en local</th>
+                            <td>Sin envío</td>
+                            <td>En el día</td>
+                            <td>Gratis</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Envío gratis en compras superiores a $60.000.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <h2>Medios de pago</h2>
+            <div class="tabla-scroll">
+                <table>
+                    <caption>Medios de pago aceptados</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Medio</th>
+                            <th scope="col">Cuotas</th>
+                            <th scope="col">Beneficio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Transferencia bancaria</th>
+                            <td>1 pago</td>
+                            <td>10% de descuento</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Tarjeta de débito</th>
+                            <td>1 pago</td>
+                            <td>&mdash;</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Tarjeta de crédito</th>
+                            <td>Hasta 3 cuotas</td>
+                            <td>Sin interés</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Efectivo (en el local)</th>
+                            <td>1 pago</td>
+                            <td>15% de descuento</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>Preguntas frecuentes</h2>
+            <!-- details/summary: desplegables sin JavaScript -->
+            <details>
+                <summary>¿Cómo sigo mi envío?</summary>
+                <p>Cuando despachamos el pedido te enviamos por correo electrónico el número de seguimiento.</p>
+            </details>
+            <details>
+                <summary>¿Puedo cambiar un producto?</summary>
+                <p>Sí, tenés 30 días desde que lo recibís para cambiarlo, siempre que esté sin uso.</p>
+            </details>
+            <details>
+                <summary>¿Cómo curo un mate de calabaza?</summary>
+                <p>Llenalo con yerba usada y agua caliente, dejalo reposar 24 horas, retirá la yerba y raspá suavemente el interior. Repetí el proceso dos o tres veces.</p>
+            </details>
+        </div>
+
+    </main>
+
+    <!-- ===== PIE DE PÁGINA ===== -->
+    <footer class="pie">
+        <div class="contenedor pie-interno">
+            <div>
+                <p class="logo">Matera <span>del Sur</span></p>
+                <p>Todo para el mate, con envíos a todo el país.</p>
+            </div>
+            <div>
+                <h4>Secciones</h4>
+                <ul>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="envios.html">Envíos y pagos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Seguinos</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="creditos">Fotos: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a> (Matias Luge, Lucia Durdos, Jeffrey Brandjes, Arūnas Naujokas, Bluewater Sweden, Egor Komarov, Arseniy Kapran, Lautaro Andreani, Camila Seves Espasandin, Federico Garcia, masha.uu).</p>
+        <p class="copy">&copy; 2026 Matera del Sur &middot; Tienda ficticia creada por Matías Giachello para Desarrollo de Software III</p>
+    </footer>
+
+</body>
+</html>

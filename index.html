@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda online de mates, bombillas, termos y yerbas.">
+    <meta name="author" content="Matías Giachello">
+    <title>Inicio | Matera del Sur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body id="top">
+
+    <!-- ===== ENCABEZADO Y MENÚ ===== -->
+    <header class="encabezado">
+        <div class="contenedor encabezado-interno">
+            <a href="index.html" class="logo">Matera <span>del Sur</span></a>
+
+            <!-- Menú para celular hecho solo con CSS (checkbox + label) -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icono" aria-label="Abrir menú">&#9776;</label>
+
+            <nav class="menu">
+                <ul>
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="envios.html">Envíos y pagos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== PORTADA ===== -->
+        <section class="portada">
+            <div class="contenedor portada-interno">
+                <div class="portada-texto">
+                    <p class="subtitulo">Tienda online de productos materos</p>
+                    <h1>Todo lo que necesitás para tu <em>mate</em></h1>
+                    <p>Mates artesanales, bombillas, termos y las mejores yerbas, con envío a todo el país.</p>
+                    <a href="productos.html" class="boton boton-grande">Ver productos</a>
+                </div>
+                <img src="https://images.unsplash.com/photo-1687920492018-e21cad9023d9?w=800&q=70&auto=format&fit=crop" alt="Persona cebando un mate con termo" class="portada-imagen">
+            </div>
+        </section>
+
+        <!-- ===== BENEFICIOS ===== -->
+        <section class="beneficios contenedor">
+            <div class="beneficio">
+                <span class="icono">&#128666;</span>
+                <h3>Envíos a todo el país</h3>
+                <p>Gratis en compras desde $60.000.</p>
+            </div>
+            <div class="beneficio">
+                <span class="icono">&#128179;</span>
+                <h3>Hasta 3 cuotas sin interés</h3>
+                <p>Con tarjetas de crédito.</p>
+            </div>
+            <div class="beneficio">
+                <span class="icono">&#127807;</span>
+                <h3>Productos artesanales</h3>
+                <p>Hechos por artesanos de Argentina.</p>
+            </div>
+        </section>
+
+        <!-- ===== DESTACADOS ===== -->
+        <section class="contenedor seccion">
+            <h2>Productos destacados</h2>
+            <div class="grilla">
+                <article class="producto">
+                    <span class="etiqueta">Combo</span>
+                    <img src="https://images.unsplash.com/photo-1683237854707-8fcd36639f9b?w=600&q=70&auto=format&fit=crop" alt="Set matero completo" loading="lazy">
+                    <div class="producto-info">
+                        <h3>Set matero completo</h3>
+                        <p>Mate imperial, bombilla de alpaca, termo de 1 litro y bolso de cuero.</p>
+                        <p class="precio">$72.000</p>
+                        <a href="contacto.html" class="boton">Consultar</a>
+                    </div>
+                </article>
+                <article class="producto">
+                    <span class="etiqueta">Más vendido</span>
+                    <img src="https://images.unsplash.com/photo-1784475844948-e9abada34215?w=600&q=70&auto=format&fit=crop" alt="Mate Imperial de calabaza" loading="lazy">
+                    <div class="producto-info">
+                        <h3>Mate Imperial de calabaza</h3>
+                        <p>Calabaza seleccionada forrada en cuero, con virola de alpaca cincelada.</p>
+                        <p class="precio">$28.000</p>
+                        <a href="contacto.html" class="boton">Consultar</a>
+                    </div>
+                </article>
+                <article class="producto">
+                    <span class="etiqueta">Más vendido</span>
+                    <img src="https://images.unsplash.com/photo-1613645540553-d98859ffeec5?w=600&q=70&auto=format&fit=crop" alt="Termo de acero 1 litro" loading="lazy">
+                    <div class="producto-info">
+                        <h3>Termo de acero 1 litro</h3>
+                        <p>Mantiene el agua caliente 24 horas. Pico cebador incluido.</p>
+                        <p class="precio">$45.000</p>
+                        <a href="contacto.html" class="boton">Consultar</a>
+                    </div>
+                </article>
+            </div>
+            <p class="centrado"><a href="productos.html" class="enlace">Ver todo el catálogo &rarr;</a></p>
+        </section>
+
+        <!-- ===== CATEGORÍAS (enlaces a anclas de otra página) ===== -->
+        <section class="contenedor seccion">
+            <h2>Comprá por categoría</h2>
+            <div class="categorias">
+                <a href="productos.html#mates" class="cat-item"><img src="https://images.unsplash.com/photo-1784475845427-81d1967770b9?w=500&q=70&auto=format&fit=crop" alt="" loading="lazy"><span>Mates</span></a>
+                <a href="productos.html#bombillas" class="cat-item"><img src="https://images.unsplash.com/photo-1784475844777-dc04755b82a3?w=500&q=70&auto=format&fit=crop" alt="" loading="lazy"><span>Bombillas</span></a>
+                <a href="productos.html#termos" class="cat-item"><img src="https://images.unsplash.com/photo-1613645540553-d98859ffeec5?w=500&q=70&auto=format&fit=crop" alt="" loading="lazy"><span>Termos</span></a>
+                <a href="productos.html#yerbas" class="cat-item"><img src="https://images.unsplash.com/photo-1559749619-5f290507d5e6?w=500&q=70&auto=format&fit=crop" alt="" loading="lazy"><span>Yerbas</span></a>
+            </div>
+        </section>
+
+        <!-- ===== NOSOTROS ===== -->
+        <section class="nosotros">
+            <!-- Foto de fondo aplicada desde el CSS -->
+            <div class="contenedor">
+                <h2>Sobre nosotros</h2>
+                <p>
+                    <strong>Matera del Sur</strong> nació en 2020 como un emprendimiento familiar.
+                    Trabajamos con <em>artesanos de todo el país</em> para ofrecer productos de calidad
+                    que acompañen la costumbre más argentina de todas: <strong>compartir un mate</strong>.
+                </p>
+                <blockquote>"El mate no es una bebida, es una forma de encontrarse."</blockquote>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== PIE DE PÁGINA ===== -->
+    <footer class="pie">
+        <div class="contenedor pie-interno">
+            <div>
+                <p class="logo">Matera <span>del Sur</span></p>
+                <p>Todo para el mate, con envíos a todo el país.</p>
+            </div>
+            <div>
+                <h4>Secciones</h4>
+                <ul>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="envios.html">Envíos y pagos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Seguinos</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="creditos">Fotos: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a> (Matias Luge, Lucia Durdos, Jeffrey Brandjes, Arūnas Naujokas, Bluewater Sweden, Egor Komarov, Arseniy Kapran, Lautaro Andreani, Camila Seves Espasandin, Federico Garcia, masha.uu).</p>
+        <p class="copy">&copy; 2026 Matera del Sur &middot; Tienda ficticia creada por Matías Giachello para Desarrollo de Software III</p>
+    </footer>
+
+</body>
+</html>

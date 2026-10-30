@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de consultas y ubicación del local.">
+    <meta name="author" content="Matías Giachello">
+    <title>Contacto | Matera del Sur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body id="top">
+
+    <!-- ===== ENCABEZADO Y MENÚ ===== -->
+    <header class="encabezado">
+        <div class="contenedor encabezado-interno">
+            <a href="index.html" class="logo">Matera <span>del Sur</span></a>
+
+            <!-- Menú para celular hecho solo con CSS (checkbox + label) -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icono" aria-label="Abrir menú">&#9776;</label>
+
+            <nav class="menu">
+                <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="envios.html">Envíos y pagos</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="titulo-pagina">
+            <div class="contenedor">
+                <h1>Contacto</h1>
+                <p>Hacenos tu consulta o pedido y te respondemos dentro de las 24 horas.</p>
+            </div>
+        </section>
+
+        <div class="contenedor seccion contacto">
+
+            <!-- ===== FORMULARIO ===== -->
+            <form class="formulario" action="#" method="post">
+                <fieldset>
+                    <legend>Tus datos</legend>
+
+                    <label for="nombre">Nombre y apellido *</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required minlength="3">
+
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="11 2345-6789" pattern="[0-9 -]{8,15}" title="Solo números, espacios o guiones">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tu consulta</legend>
+
+                    <label for="producto">Producto de interés</label>
+                    <select id="producto" name="producto">
+                        <option value="">-- Elegí un producto --</option>
+                        <option>Mate Imperial de calabaza</option>
+                        <option>Mate Torpedo de algarrobo</option>
+                        <option>Mate de cerámica esmaltada</option>
+                        <option>Bombilla pico de loro</option>
+                        <option>Bombilla de acero inoxidable</option>
+                        <option>Bombilla de caña bambú</option>
+                        <option>Termo de acero 1 litro</option>
+                        <option>Termo de acero 750 ml</option>
+                        <option>Termo de acero 500 ml</option>
+                        <option>Yerba orgánica 1 kg</option>
+                        <option>Yerba barbacuá 500 g</option>
+                        <option>Yerba compuesta 500 g</option>
+                        <option>Set matero completo</option>
+                    </select>
+
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" max="20" value="1">
+
+                    <p class="label">Forma de pago preferida</p>
+                    <div class="opciones">
+                        <label><input type="radio" name="pago" value="transferencia" checked> Transferencia</label>
+                        <label><input type="radio" name="pago" value="tarjeta"> Tarjeta</label>
+                        <label><input type="radio" name="pago" value="efectivo"> Efectivo</label>
+                    </div>
+
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu consulta..." required></textarea>
+
+                    <label class="check"><input type="checkbox" name="novedades"> Quiero recibir novedades y ofertas</label>
+                </fieldset>
+
+                <div class="botones">
+                    <button type="submit" class="boton">Enviar consulta</button>
+                    <button type="reset" class="boton boton-claro">Borrar</button>
+                </div>
+                <p class="nota">* Campos obligatorios. Este formulario es solo de demostración y no envía datos.</p>
+            </form>
+
+            <!-- ===== DATOS Y MAPA ===== -->
+            <aside class="datos-contacto">
+                <h2>Nuestro local</h2>
+                <address>
+                    Av. Corrientes 1234, CABA<br>
+                    Lunes a sábado de 10 a 19 hs<br>
+                    <a href="mailto:contacto@materadelsur.com">contacto@materadelsur.com</a>
+                </address>
+
+                <!-- iframe: mapa embebido de Google Maps -->
+                <iframe
+                    class="mapa"
+                    title="Mapa de ubicación del local"
+                    src="https://maps.google.com/maps?q=Av.%20Corrientes%201234,%20CABA&amp;z=15&amp;output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </aside>
+        </div>
+
+    </main>
+
+    <!-- ===== PIE DE PÁGINA ===== -->
+    <footer class="pie">
+        <div class="contenedor pie-interno">
+            <div>
+                <p class="logo">Matera <span>del Sur</span></p>
+                <p>Todo para el mate, con envíos a todo el país.</p>
+            </div>
+            <div>
+                <h4>Secciones</h4>
+                <ul>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="envios.html">Envíos y pagos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Seguinos</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="creditos">Fotos: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a> (Matias Luge, Lucia Durdos, Jeffrey Brandjes, Arūnas Naujokas, Bluewater Sweden, Egor Komarov, Arseniy Kapran, Lautaro Andreani, Camila Seves Espasandin, Federico Garcia, masha.uu).</p>
+        <p class="copy">&copy; 2026 Matera del Sur &middot; Tienda ficticia creada por Matías Giachello para Desarrollo de Software III</p>
+    </footer>
+
+</body>
+</html>
